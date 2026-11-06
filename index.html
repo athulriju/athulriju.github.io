@@ -12,7 +12,7 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a0f26;--surface:#2a1840;--ink:#f4ecff;--muted:#c0aad8;--line:#46295f;--a:#c98cff;--b:#ffb86b;--glow:rgba(201,140,255,.18);color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#1a0f26;--surface:#2a1840;--ink:#f4ecff;--muted:#c0aad8;--line:#46295f;--a:#c98cff;--b:#ffb86b;--glow:rgba(201,140,255,.18);color-scheme:dark}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 19px/1.7 'DM Sans',system-ui,sans-serif;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17.5px/1.7 'DM Sans',system-ui,sans-serif;overflow-x:hidden}
 h1,h2,h3{font-family:'Bricolage Grotesque','DM Sans',sans-serif;line-height:1.1;margin:0}
 a{color:inherit}
 #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--a),var(--b));z-index:30}
@@ -21,14 +21,14 @@ nav b{font:800 20px 'Bricolage Grotesque',sans-serif;margin-right:auto;white-spa
 nav a{text-decoration:none;padding:6px 12px;border-radius:99px;font-size:15px;color:var(--muted);white-space:nowrap}
 nav a:hover,nav a.on{background:var(--glow);color:var(--ink)}
 #theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;padding:6px 12px;cursor:pointer;font:inherit;font-size:15px}
-section{padding:110px 5vw;max-width:1280px;margin:auto}
-h2{font-size:clamp(36px,6vw,62px);margin-bottom:12px}
+section{padding:84px 5vw;max-width:1120px;margin:auto}
+h2{font-size:clamp(30px,4.6vw,46px);margin-bottom:12px}
 .lead{color:var(--muted);max-width:60ch;margin:0 0 36px}
 #hero{position:relative;max-width:none;min-height:88vh;display:flex;align-items:center;overflow:hidden}
 #cv{position:absolute;inset:0;width:100%;height:100%}
-.hin{position:relative;max-width:1280px;margin:auto;width:100%}
+.hin{position:relative;max-width:1120px;margin:auto;width:100%}
 .hi{color:var(--a);font-weight:700}
-h1{font-size:clamp(52px,9vw,124px);letter-spacing:-.03em;font-weight:800}
+h1{font-size:clamp(46px,8vw,104px);letter-spacing:-.03em;font-weight:800}
 .role{font:500 clamp(20px,3.5vw,32px) 'Bricolage Grotesque',sans-serif;margin:18px 0 8px;min-height:1.4em}
 .role span{color:var(--b)}.caret{display:inline-block;width:3px;height:1em;background:var(--a);vertical-align:-3px;animation:bl 1s steps(1) infinite}
 @keyframes bl{50%{opacity:0}}
@@ -38,7 +38,7 @@ h1{font-size:clamp(52px,9vw,124px);letter-spacing:-.03em;font-weight:800}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:44px}
 .stat{border-left:3px solid var(--b);padding-left:14px}.stat b{font:800 38px 'Bricolage Grotesque',sans-serif;display:block}.stat span{color:var(--muted);font-size:15px}
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:32px;transition:transform .15s ease-out,border-color .2s}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;transition:transform .15s ease-out,border-color .2s}
 .card:hover{border-color:var(--a)}
 .skill{margin-bottom:16px}.skill div{display:flex;justify-content:space-between;font-weight:500}
 .track{height:8px;background:var(--line);border-radius:9px;overflow:hidden;margin-top:6px}
@@ -61,17 +61,43 @@ h1{font-size:clamp(52px,9vw,124px);letter-spacing:-.03em;font-weight:800}
 footer{text-align:center;padding:40px 5vw;color:var(--muted);border-top:1px solid var(--line)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
 
-.lead{font-size:1.15em;max-width:70ch}.card h3,.tl h3,.pj h3{font-size:26px}.card p{font-size:1.05em}.stat b{font-size:50px}nav a{font-size:17px}nav b{font-size:24px}.chip{font-size:16px;padding:6px 14px}.btn{padding:15px 28px;font-size:18px}.skill{margin-bottom:20px}.track{height:10px}
+.lead{font-size:1.08em;max-width:68ch}.card h3,.tl h3,.pj h3{font-size:22px}.stat b{font-size:42px}nav a{font-size:16px}nav b{font-size:22px}.chip{font-size:15px;padding:5px 13px}.btn{padding:13px 24px;font-size:16px}.skill{margin-bottom:18px}.track{height:9px}
 .btn:focus-visible,a:focus-visible,#theme:focus-visible,.pj button:focus-visible{outline:3px solid var(--b);outline-offset:3px}
 .icons{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:18px;margin-top:18px}
 .ic{display:flex;flex-direction:column;align-items:center;gap:8px;font-weight:500;font-size:15px;text-align:center}
 .ic i{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;color:#fff;font:800 17px 'Bricolage Grotesque',sans-serif;font-style:normal;box-shadow:0 6px 16px rgba(0,0,0,.18);transition:transform .25s}
 .ic:hover i{transform:translateY(-6px) rotate(-4deg)}.ic i svg{width:38px;height:38px}
-.ic i{width:68px;height:68px;background:#fff;border:1px solid var(--line)}.ic i svg{width:46px;height:46px}
+.ic i{width:60px;height:60px;background:#fff;border:1px solid var(--line)}.ic i svg{width:40px;height:40px}
+
+#shade{position:fixed;inset:0;background:#10061a;opacity:calc(var(--d,0)*var(--mx,.22));pointer-events:none;z-index:-1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--mx:.55}}:root[data-theme="dark"]{--mx:.55}
+#hero{min-height:82vh}
+.ht{display:flex;flex-direction:column;align-items:flex-start}
+.hi{display:inline-flex;gap:8px;align-items:center;padding:6px 16px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:16px;font-weight:500;color:var(--ink);margin:0}
+.wave{display:inline-block;transform-origin:70% 70%;animation:wv 2.4s ease-in-out 1}
+@keyframes wv{0%,100%{transform:rotate(0)}15%,45%{transform:rotate(18deg)}30%,60%{transform:rotate(-12deg)}}
+h1{font-size:clamp(44px,7vw,92px);margin:20px 0 0;padding-bottom:.08em;background:linear-gradient(100deg,var(--a),var(--b),var(--a));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:sh 7s linear infinite}
+@keyframes sh{to{background-position:200% center}}
+.role{font-size:clamp(18px,2.6vw,26px);margin:14px 0 18px}
+.ht .lead{max-width:52ch;font-size:1.05em;margin:0 0 4px}
+.ht .btns{margin-top:24px}
+.stats{width:100%;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.stat b{font-size:38px}
+h2::after{content:"";display:block;width:56px;height:5px;border-radius:5px;background:linear-gradient(90deg,var(--a),var(--b));margin-top:12px}
+h1{background:linear-gradient(100deg,var(--ink) 0%,var(--a) 35%,var(--b) 65%,var(--ink) 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite;padding-bottom:.08em}
+@keyframes shine{to{background-position:-250% 0}}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:6px 14px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:14px;font-weight:500;margin-bottom:16px}
+.pill i{width:9px;height:9px;border-radius:50%;background:#22c55e;animation:pu 1.8s infinite}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}70%,100%{box-shadow:0 0 0 10px rgba(34,197,94,0)}}
+.hi{margin:0 0 4px;font-size:1.1em}
+:root{--deep:#cdbbe8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--deep:#07030c}}
+:root[data-theme="dark"]{--deep:#07030c}
+body{background:color-mix(in srgb,var(--bg) calc(100% - var(--shade,0)*100%),var(--deep))}
 </style>
 </head>
 <body>
-<div id="bar"></div>
+<div id="bar"></div><div id="shade"></div>
 <nav>
   <b>Athul K R</b>
   <a href="#about">About</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
@@ -81,7 +107,8 @@ footer{text-align:center;padding:40px 5vw;color:var(--muted);border-top:1px soli
 <section id="hero">
   <canvas id="cv" aria-hidden="true"></canvas>
   <div class="hin"><div class="ht">
-    <p class="hi">Hi, I’m</p>
+    <span class="pill"><i></i>Available for opportunities</span>
+    <p class="hi"><span class="wave">👋</span> Hello, I’m</p>
     <h1>Athul K R</h1>
     <p class="role"><span id="typed"></span><i class="caret"></i></p>
     <p class="lead" style="margin-bottom:0">Junior Software Developer who builds web applications with Django, Laravel, ASP.NET and React, and enjoys turning messy problems into clean systems.</p>
@@ -160,7 +187,7 @@ const $=s=>document.querySelector(s);
 $('#theme').onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=d?'light':'dark'};
 // progress + active nav
 const links=[...document.querySelectorAll('nav a')];
-addEventListener('scroll',()=>{const h=document.documentElement;$('#bar').style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+'%';
+addEventListener('scroll',()=>{const h=document.documentElement;const pr=Math.min(1,scrollY/Math.max(1,h.scrollHeight-innerHeight));$('#bar').style.width=pr*100+'%';h.style.setProperty('--d',pr.toFixed(3));
  let cur='';document.querySelectorAll('section').forEach(s=>{if(s.getBoundingClientRect().top<140)cur=s.id});links.forEach(a=>a.classList.toggle('on',a.hash==='#'+cur))},{passive:true});
 // typing
 const roles=['Full-stack web developer','Django & Laravel builder','Problem solver','Lifelong learner'];let ri=0,ci=0,del=false;
@@ -169,7 +196,7 @@ const roles=['Full-stack web developer','Django & Laravel builder','Problem solv
  if(del&&ci===0){del=false;ri=(ri+1)%roles.length}
  ci+=del?-1:1;setTimeout(type,del?35:75)})();
 // skills
-const skills=[['Python / Django',85],['PHP / Laravel',82],['HTML5 & CSS',80],['Java',70],['C# / ASP.NET',68],['C / C++',72],['React',75]];
+const skills=[['Python / Django',85],['PHP / Laravel',82],['HTML5 & CSS',80],['Java',70],['C# / .NET',85],['C / C++',72],['React',75]];
 $('#sk').innerHTML='<h3 style="margin-bottom:18px">Proficiency</h3>'+skills.map(s=>`<div class="skill"><div><span>${s[0]}</span><span>${s[1]}%</span></div><div class="track"><div class="fill" data-w="${s[1]}"></div></div></div>`).join('');
 // projects
 const P=[['Project Management System','Django · MySQL','A web application that streamlines project allocation, task tracking and team collaboration.'],
@@ -216,6 +243,9 @@ PHP:V('<ellipse cx="24" cy="24" rx="22" ry="13" fill="#777bb4"/>'+T('php',17,'#1
 Python:V('<path d="M24 4c-8 0-8 3-8 6v4h9v2H13c-4 0-7 3-7 9s3 8 6 8h3v-5c0-3 3-6 6-6h9c3 0 5-2 5-5v-8c0-3-4-5-11-5z" fill="#3776ab"/><path d="M24 44c8 0 8-3 8-6v-4h-9v-2h12c4 0 7-3 7-9s-3-8-6-8h-3v5c0 3-3 6-6 6h-9c-3 0-5 2-5 5v8c0 3 4 5 11 5z" fill="#ffd43b"/><circle cx="19" cy="10" r="1.8" fill="#fff"/><circle cx="29" cy="38" r="1.8" fill="#fff"/>')};
 const mk=(a,id)=>$(id).innerHTML=a.map(n=>`<div class="ic"><i aria-hidden="true">${ICONS[n]}</i>${n}</div>`).join('');
 mk(['Django','Laravel','ASP.NET','React','HTML5','CSS3','MySQL'],'#ic');mk(['C','C++','C#','Java','PHP','Python'],'#ic2');
+
+// darken background as you scroll
+addEventListener('scroll',()=>{const h=document.documentElement;h.style.setProperty('--shade',Math.min(1,scrollY/Math.max(1,h.scrollHeight-innerHeight)).toFixed(3))},{passive:true});
 </script>
 </body>
 </html>
